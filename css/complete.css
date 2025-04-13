@@ -1,0 +1,103 @@
+body {
+    background: #34495e;
+    background-image: url("../Images/flat-lay-notebook.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100vh;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.main-section {
+    background: transparent;
+    max-width: 500px;
+    width: 90%;
+    height: 500px;
+    margin: 30px auto;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.add-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #fff;
+    margin: 0px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.show-todo-section {
+    max-width: 500px;
+    width: 100%;
+    background: #ffffff;
+    margin: -26.8rem auto auto auto;
+    /* margin: 30px auto; */
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.todo-item {
+    width: 95%;
+    margin: 10px auto;
+    padding: 20px 10px;
+    box-shadow: 0 4px 8px 0 #ccc, 0 6px 20px 0 #ccc;
+    border-radius: 5px;
+}
+
+.add-section h2 {
+    display: inline-block;
+    padding: 5px 0px;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    color: #0088FF;
+}
+
+.todo-item h2 {
+    display: inline-block;
+    padding: 5px 0px;
+    font-size: 17px;
+    font-family: sans-serif;
+    color: #6d6b6b;
+}
+
+.todo-item small {
+    display: block;
+    width: 100%;
+    padding: 5px 0px;
+    color: #888;
+    padding-left: 30px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.add-section a{
+    width: 40%;
+    height: auto;
+    margin: 0px auto;
+    text-align: center;
+    padding: 12px 12px 0 12px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background: #0088FF;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo-item p{
+    text-align: center;
+    color: #6d6b6b;
+}

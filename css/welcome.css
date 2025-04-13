@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    background-image: url("../Images/flat-lay-notebook.avif");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    z-index: 2;
+    /* border: 2px solid red; */
+}
+
+.header{
+    /* color: #0088FF; */
+    position: relative;
+    z-index: 2;
+    font-size: 3.5rem;
+}
+
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1b1b3270;
+    z-index: 1;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    z-index: 2;
+}
+
+.welcome h1{
+    /* color: #0088FF; */
+    font-size: 2rem;
+}
+
+.welcome p{
+    display: flex;
+    max-width: 70%;
+    line-height: 1.8rem;
+    /* border: 2px solid blue; */
+}
+
+div{
+    display: flex;
+    gap: 20px;
+    min-width: 150px;
+    max-height: 350px;
+    flex-wrap: nowrap;
+    font-size: 1.3rem;
+    /* border: 2px solid red; */
+}
+
+div a{
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.signup{
+    background-color: rgb(17, 110, 250);
+}
+.login{
+    /* background-color: rgb(112, 107, 107); */
+    background-color: rgb(17, 110, 250);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    background-color: #1b1b32;
+    color: white;
+    height: 20vh;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 992px){
+    .header{
+        font-size: 3.2rem;
+    }
+
+    .welcome p{
+        font-size: 1rem;
+    }
+
+}

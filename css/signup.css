@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/flat-lay-notebook.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100vh;
+    width: 100%;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1b1b328f;
+    z-index: 1;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+h1{
+    color: rgb(17, 110, 250);
+}
+
+.login-container {
+    background: #ffffffbb;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 320px;
+    max-width: 360px;
+    min-height: 450px;
+    position: relative;
+    z-index: 2;
+}
+
+.login{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.login a{
+    text-decoration: none;
+    color: rgb(17, 110, 250);
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.login small {
+    /* display: block; */
+    /* width: 100%; */
+    padding: 5px 0px;
+    color: rgb(39, 37, 37);
+    padding-left: 10px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.form{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+input {
+    display: block;
+    width: 95%;
+    height: 40px;
+    margin: 10px auto;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+button {
+    width: 60%;
+    padding: 10px;
+    background-color: rgb(17, 110, 250);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    box-shadow: 0 2px 2px 0 #ccc, 0 2px 3px 0 #ccc;
+    opacity: 0.7;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 11px;
+    width: 100%;
+    margin-bottom: 3px;
+    text-decoration: none;
+    color: rgb(17, 110, 250);
+}
+
+.red{
+    text-align: center;
+    color: rgb(245, 63, 63);
+    font-size: 16px;
+}
+
+.error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
