@@ -28,7 +28,7 @@ function signup_inputs(){
             <button type="submit">Sign up</button>
             <div class="login">
                 <small>already have an account?</small>
-                <a href="../Handles_Log_in/log-in_form.php" class="btn">Log in</a>
+                <a href="login_form.php" class="btn">Log in</a>
             </div>
         </div>';
     } 

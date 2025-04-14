@@ -1,9 +1,18 @@
 <?php 
+    require_once "../handler/config_session.php";
     require_once "../handler/db_connect.php";
 
+    if(!isset($_SESSION["user_id"])){
+        header("Location: tasks.php?message=not_found_completedTasks");
+        exit();
+    }
+
+    $userId = $_SESSION["user_id"];
+
     try {
-        $query = "SELECT * FROM tasks WHERE checked = 1 ORDER BY created_at DESC;";
+        $query = "SELECT * FROM tasks WHERE checked = 1 AND user_id = :userId  ORDER BY created_at DESC;";
         $tasks = $pdo->prepare($query);
+        $tasks -> bindParam(":userId", $userId);
         $tasks->execute();
         $results = $tasks->fetchAll(PDO::FETCH_ASSOC);
     } catch (PDOException $e) {
