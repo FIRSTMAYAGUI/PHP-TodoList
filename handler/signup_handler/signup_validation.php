@@ -29,13 +29,7 @@ try {
         if($errors){
             $_SESSION["signup_errors"] = $errors; //stores the errors in the session variable array: $_SESSION["signup_errors"]
 
-            /* $signupdata = [
-                "user_name" => $username */
-                 /* note that I can give the key array any name I just used u_name(user name) for it to make sense and because I've been using it at the start of my code. That is, at the place of u_name I could put username or user_name or simply name etc... */
-
-            /* ]; */ //taking data entered by the user(except the password) and storing them in array
-
-            $_SESSION["signup_data"] = $username; //storing the $signupdata in a session variable
+            $_SESSION["signup_data"] = $username; //storing the username in a session variable
 
             header("Location: ../../pages/signup_form.php"); //sends the user back to the front page if there is an error 
 
@@ -44,12 +38,10 @@ try {
 
         create_user($pdo, $confirm_pwd, $username, $pwd); //add the user to the database(DB) if no error
 
-        /* $userId = set_user($pdo, $username, $pwd); */ // it sent me an error when this line is written
-
             $_SESSION["user_name"] = $username;
             $_SESSION["user_id"] = $pdo->lastInsertId();
 
-        header("Location: ../../pages/tasks.php?signup=success"); //after adding the user to the DB, sends the user back to the main page 
+        header("Location: ../../pages/tasks.php?signup=success"); //after adding the user to the DB, sends the user back to the tasks page 
 
             $pdo =  null;  
             $stmt = null;
